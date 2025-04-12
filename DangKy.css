@@ -1,0 +1,97 @@
+/* Reset mặc định để tránh lỗi khoảng cách không mong muốn */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Căn giữa nội dung trên màn hình */
+body {
+  margin-top: -500px;
+  display: flex; /* Sử dụng Flexbox để căn chỉnh */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Chiều cao bằng 100% chiều cao màn hình */
+}
+
+/* Thiết kế khung chứa form */
+.container {
+  width: 350px; /* Định kích thước chiều rộng */
+  padding: 20px; /* Thêm padding để nội dung không bị sát mép */
+  background-color: #df7f7f; /* Màu nền của form */
+  border-radius: 8px; /* Bo tròn các góc */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ để tạo hiệu ứng nổi */
+  border: 1px solid #ddd; /* Viền mỏng xung quanh form */
+  text-align: left; /* Căn chữ sang trái */
+}
+
+/* Tiêu đề của form */
+h2 {
+  text-align: center; /* Căn giữa tiêu đề */
+  margin-bottom: 15px; /* Tạo khoảng cách bên dưới */
+}
+
+/* Kiểu dáng cho nhãn (label) */
+label {
+  font-weight: bold; /* Chữ đậm */
+  display: block; /* Hiển thị trên dòng riêng */
+  margin-top: 10px; /* Khoảng cách giữa các nhãn */
+}
+
+/* Input text và textarea */
+input[type="text"],
+textarea {
+  width: 100%; /* Chiều rộng bằng 100% của phần tử chứa nó */
+  padding: 8px; /* Tạo khoảng cách bên trong */
+  margin-top: 5px; /* Khoảng cách giữa input và label */
+  border: 1px solid #ccc; /* Viền mỏng */
+  border-radius: 4px; /* Bo tròn góc input */
+}
+
+/* Căn chỉnh radio button và checkbox */
+.gender,
+.hobbies {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa các input và nhãn */
+  margin-top: 5px;
+}
+
+/* Khoảng cách nhỏ giữa radio/checkbox và chữ */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Kiểu dáng dropdown (select) */
+select {
+  width: 100%; /* Chiều rộng full */
+  padding: 8px; /* Tạo khoảng cách bên trong */
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Nhóm nút bấm (submit và reset) */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Căn các nút về hai phía */
+  margin-top: 15px;
+}
+
+/* Kiểu dáng cho button */
+button {
+  width: 48%; /* Mỗi nút chiếm 48% chiều rộng để có khoảng cách giữa hai nút */
+  padding: 10px; /* Tạo khoảng cách bên trong */
+  border: none; /* Xóa viền */
+  border-radius: 4px; /* Bo tròn góc */
+  background-color: #007bff; /* Màu nền xanh dương */
+  color: white; /* Màu chữ trắng */
+  cursor: pointer; /* Biểu tượng con trỏ khi di chuột vào */
+  transition: 0.9s; /* Hiệu ứng chuyển đổi màu mượt mà */
+}
+/* Hiệu ứng khi di chuột vào button */
+button:hover {
+  background-color: #19cb34; /* Chuyển thành màu xanh lá cây */
+}

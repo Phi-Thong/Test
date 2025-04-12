@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <style>
+      * {
+        padding: 5px;
+      }
+      /* Thiết lập container chứa hình ảnh và văn bản */
+      .container, .gp-container, .kh-container {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      /* Cài đặt cho phần chứa hình ảnh */
+      .image-container {
+        width: 300px;
+        margin-right: 15px;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Cài đặt cho văn bản */
+      .text-container,
+      .text-container2,
+      .text-container3 {
+        flex: 1;
+        text-align: justify;
+        font-size: 20px;
+      }
+
+      /* Thiết lập cho kế hoạch */
+      .kh-container {
+        display: flex;
+        margin-top: 20px;
+      }
+      .kh-container img {
+        padding-top: 30px;
+        padding-left: 0;
+      }
+      .gp-container img{
+        padding-top: 30px;
+      }
+
+      fieldset {
+        border: 5px solid  rgb(103, 179, 226);
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        /* display: none; */
+      }
+      legend {
+        font-size: 30px;
+        font-weight: bold;
+        color:  rgb(56, 141, 194)
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Tin tức hoạt động</legend>
+      <div class="container">
+        <div class="image-container">
+          <img src="img/Hội Khỏe.jpg" alt="Hội khoẻ Phù Đổng" />
+        </div>
+        <div class="text-container">
+          <p>
+            <strong>Hội khoẻ Phù Đổng cấp trường năm học 2023-2024</strong> là
+            ngày hội thể thao của học sinh, được tổ chức nhằm duy trì và đẩy
+            mạnh phong trào rèn luyện thân thể. Đây là cơ hội để các em học sinh
+            thể hiện tài năng và tinh thần thể thao. Trong khuôn khổ hội khoẻ,
+            nhiều nội dung thi đấu hấp dẫn như điền kinh, bóng đá, bóng chuyền,
+            cầu lông, kéo co, cờ vua… sẽ diễn ra với sự tham gia nhiệt tình của
+            các vận động viên học sinh đến từ nhiều khối lớp. Không khí náo
+            nhiệt của hội khoẻ không chỉ tạo động lực cho các em cố gắng vượt
+            qua giới hạn của bản thân mà còn lan tỏa tinh thần thể thao cao đẹp,
+            ý chí kiên trì và khát khao chiến thắng.
+          </p>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Kế hoạch sắp tới</legend>
+      <div class="kh-container">
+        <div class="image-container">
+          <img src="img/Kéhoacj.jpg" alt="Hình ảnh kế hoạch" />
+        </div>
+        <div class="text-container2">
+          <p>
+            Nhằm nâng cao ý thức và trách nhiệm của cộng đồng trong việc phòng
+            chống tệ nạn ma túy, đặc biệt là các chất gây nghiện “núp bóng” dưới
+            dạng thực phẩm, đồ uống, thuốc lá điện tử và shisha, các cơ quan
+            chức năng đang triển khai kế hoạch quản lý, giám sát chặt chẽ.
+          </p>
+          <ul>
+            <li>
+              Tăng cường kiểm tra, giám sát tại các cơ sở kinh doanh, trường
+              học, khu vui chơi để phát hiện và xử lý kịp thời các sản phẩm có
+              chứa chất cấm.
+            </li>
+            <li>
+              Đẩy mạnh công tác tuyên truyền, giáo dục để nâng cao nhận thức về
+              tác hại của ma túy, đặc biệt là những loại ma túy mới đang lan
+              tràn trong giới trẻ.
+            </li>
+            <li>
+              Phối hợp với gia đình, nhà trường và các tổ chức đoàn thể để tạo
+              ra môi trường sống lành mạnh, giúp thanh thiếu niên tránh xa tệ
+              nạn.
+            </li>
+            <li>
+              Xử lý nghiêm các trường hợp vi phạm, đồng thời kêu gọi cộng đồng
+              cùng tham gia phát hiện, tố giác các hành vi liên quan đến việc
+              tàng trữ, buôn bán các chất ma túy trá hình.
+            </li>
+          </ul>
+          <p>
+            Việc ngăn chặn ma túy không chỉ là trách nhiệm của các cơ quan chức
+            năng mà còn là trách nhiệm của toàn xã hội. Hãy cùng chung tay bảo
+            vệ thế hệ trẻ khỏi những hiểm họa do ma túy gây ra!
+          </p>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Kỉ niệm 50 năm giải phóng</legend>
+      <div class="gp-container">
+        <div class="image-container">
+          <img src="img/anhGP.jpg" alt="Hình ảnh kỷ niệm" />
+      </div>
+      <div class="text-container3">
+        <p>Ngày 30/4/1975 là một trong những cột mốc quan trọng nhất trong 
+          lịch sử dân tộc Việt Nam. Đây là ngày miền Nam hoàn toàn giải phóng,
+           đất nước thống nhất sau hơn 20 năm chiến tranh gian khổ. Sự kiện này
+            không chỉ đánh dấu chiến thắng vĩ đại của quân và dân ta mà còn mở 
+            ra một trang sử mới, đưa Việt Nam bước vào thời kỳ độc lập, hòa bình 
+            và phát triển.
+
+             Trải qua 50 năm, đất nước ta đã có những bước tiến mạnh mẽ trên mọi
+              lĩnh vực từ kinh tế, văn hóa đến giáo dục, khoa học. Thành tựu này 
+              có được là nhờ sự hy sinh, cống hiến của các thế hệ cha ông đi trước, 
+              những người đã chiến đấu kiên cường vì độc lập, tự do.
+
+            Ngày 30/4 không chỉ là dịp để tưởng nhớ những hy sinh to lớn của dân tộc 
+            mà còn là lời nhắc nhở mỗi người dân Việt Nam về trách nhiệm gìn giữ, phát
+             huy truyền thống yêu nước và đoàn kết. Hãy cùng nhau tiếp tục xây dựng một 
+             Việt Nam giàu mạnh, văn minh, sánh vai với bạn bè quốc tế!
+ 
+                    🇻🇳 Tự hào Việt Nam! 🇻🇳</p>
+      </div>
+    </fieldset>
+
+  </body>
+</html>

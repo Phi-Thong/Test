@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  height: auto; /* Điều chỉnh chiều cao theo ảnh */
+  overflow: hidden; /* Tránh lỗi tràn lề */
+}
+
+.header img {
+  width: 100%; /* Trải rộng ảnh theo phần header */
+  height: auto; /* Giữ tỷ lệ ảnh */
+  display: block; /* Ngăn khoảng trắng bên dưới ảnh */
+}
+
+/* header */
+
+.menu {
+  position: sticky;
+  top: 0; /* Giữ menu luôn ở trên cùng khi cuộn */
+}
+
+.menu ul {
+  background-color: rgb(56, 141, 194);
+  /* màu cam cho dòng ngang  */
+  text-align: center;
+}
+.menu ul li {
+  display: inline-block;
+  /*  cho nó nằm nganh vs mấy thẻ kia  */
+}
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding: 0 10px;
+  /* Khoảng cách giữa các menu */
+  line-height: 25px;
+  /* Chiều cao của menu */
+}
+/* Của trang chủ giới thiệu  */
+.menu a:hover {
+  background: #e4e4ea; /* Đổi màu nền */
+  color: black; /* Đổi màu chữ */
+  transform: scale(1.1); /* Phóng to nhẹ */
+  border-radius: 5px; /* Bo góc */
+  transition: 0.6s;
+}
+/*menu con   */
+.menu ul ul {
+  position: absolute;
+  /* cho lệnh nó nhảy xuống  */
+  display: none;
+  /* Ẩn menu con */
+  list-style: none;
+  /* Bỏ dấu chấm đầu dòng */
+  width: 100px;
+  /* Chiều rộng menu con */
+  box-shadow: 0 0 20px gray;
+
+  border-radius: 10px;
+  text-align: left;
+}
+.menu ul ul li {
+  display: block;
+  /* Cho menu con nằm ngang */
+}
+/* Làm tới đây rồiiiiiiiiiii---------------------------------------------------------------------------------------- */
+.menu ul ul a {
+  /* display: block; */
+  color: rgb(225, 225, 234);
+  /* text-decoration: none; */
+  font-size: 18px;
+  line-height: 40px;
+  padding: 0 10px;
+  white-space: nowrap; /* Ngăn ngắt dòng */
+}
+/* của email */
+.menu ul ul a:hover {
+  color: rgb(252, 252, 252);
+  background-color: rgb(145, 137, 171);
+  transition: 0.5s;
+  box-shadow: 0 0 10px;
+}
+.menu ul li:hover ul {
+  display: block;
+}
+
+marquee {
+  pointer-events: none; /* Vô hiệu hóa marquee để link có thể bấm */
+  color: red; /* Màu chữ */
+  font-size: 20px; /* Cỡ chữ */
+  font-weight: bold; /* Chữ đậm */
+  padding: 5px 0; /* Khoảng cách trên dưới */
+}
+
+/* hết menu */
+.content {
+  display: flex;
+  width: 100%;
+  min-height: 800px; /* Đảm bảo không bị lỗi chiều cao */
+  margin-bottom: 10px;
+}
+
+.content article {
+  flex: 3; /* 75% chiều rộng */
+  background-color: rgb(114, 174, 226);
+  min-height: 800px;
+}
+.content article iframe[name="page"] {
+  width: 100%;
+  height: 800px;
+}
+
+.content aside {
+  flex: 1; /* 25% chiều rộng */
+  background-color: rgb(137, 207, 207);
+  min-height: 800px;
+}
+.Lichnv .widthr {
+  width: 100%;
+}
+.Lichnv ul {
+  list-style: none;
+}
+.Lichnv ul a {
+  display: block;
+  background-image: url("./img/Check.jpg");
+  background-size: 20px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding: 10px 50px;
+  font-size: 22px;
+  text-decoration: none;
+}
+.Lichnv ul a:hover {
+  text-shadow: 0 0 15px black;
+  transition: 0.3s;
+  color: rgb(12, 227, 37);
+  background-color: rgb(87, 160, 132);
+  background-image: url("img/next.jpg");
+  transform: scale(1.1);
+}
+.TB ul {
+  list-style: none;
+}
+.TB ul a {
+  background-image: url("img/ThôngBAOO.jpg");
+  display: block;
+  background-size: 30px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-decoration: none;
+  background-color: rgb(107, 107, 215);
+}
+.TB ul a:hover {
+  text-shadow: 0 0 20px black;
+  transition: 0.3s;
+  color: rgb(12, 227, 37);
+  background-color: rgb(87, 160, 132);
+  background-image: url("img/next.jpg");
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(141, 141, 177);
+}
+.video,
+.diachi,
+.fanpage {
+  text-align: center;
+  background-color: aquamarine;
+}
+
+/*  */
+footer {
+  text-align: left;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+footer p {
+  margin: 0;
+  text-align: left;
+}
+
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
