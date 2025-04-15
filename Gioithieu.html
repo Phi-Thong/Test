@@ -9,6 +9,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        text-align: center;
       }
 
       fieldset {
@@ -57,9 +58,18 @@
         text-align: justify;
         overflow-wrap: break-word;
       }
+      .fb-comments {
+      }
     </style>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0&appId=969149048667411"
+    ></script>
     <fieldset>
       <legend>Lịch sử phát triển của Trường THPT Số 2 Nghĩa Hành</legend>
       <div class="container">
@@ -69,6 +79,15 @@
             alt="Ảnh trường THPT số 2 Nghĩa Hành "
           />
         </div>
+        <div
+          class="fb-like"
+          data-href="https://developers.facebook.com/docs/plugins/"
+          data-width=""
+          data-layout=""
+          data-action=""
+          data-size=""
+          data-share="true"
+        ></div>
         <div class="text-container">
           <p>
             <strong>T</strong>rường THPT Số 2 Nghĩa Hành, qua hơn 20 năm xây
@@ -112,5 +131,11 @@
         </div>
       </div>
     </fieldset>
+    <div
+      class="fb-comments"
+      data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+      data-width=""
+      data-numposts="5"
+    ></div>
   </body>
 </html>

@@ -15,7 +15,10 @@
   display: block; /* Ngăn khoảng trắng bên dưới ảnh */
 }
 
-/* header */
+/* hết header */
+/* ----------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/*------------ PHÀNA MENU ----------------------------------- */
 
 .menu {
   position: sticky;
@@ -41,10 +44,10 @@
   line-height: 25px;
   /* Chiều cao của menu */
 }
-/* Của trang chủ giới thiệu  */
+/* Của trang chủ giới thiệu  liên hệ học sinh góp ý  */
 .menu a:hover {
   background: #e4e4ea; /* Đổi màu nền */
-  color: black; /* Đổi màu chữ */
+  color: rgb(0, 0, 0); /* Đổi màu chữ */
   transform: scale(1.1); /* Phóng to nhẹ */
   border-radius: 5px; /* Bo góc */
   transition: 0.6s;
@@ -59,7 +62,7 @@
   /* Bỏ dấu chấm đầu dòng */
   width: 100px;
   /* Chiều rộng menu con */
-  box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 
   border-radius: 10px;
   text-align: left;
@@ -68,56 +71,71 @@
   display: block;
   /* Cho menu con nằm ngang */
 }
-/* Làm tới đây rồiiiiiiiiiii---------------------------------------------------------------------------------------- */
+/* -----------------MENU CON PHẦN SỔ XUỐNG ---------------------- */
 .menu ul ul a {
   /* display: block; */
-  color: rgb(225, 225, 234);
+  color: rgb(0, 0, 0);
   /* text-decoration: none; */
   font-size: 18px;
-  line-height: 40px;
+  background-color: rgb(255, 255, 255);
+  line-height: 50px;
+  /* CHIÈU CAO CỦA MENU CON  */
   padding: 0 10px;
+  /* Khoảng cách giữa các menu con */
   white-space: nowrap; /* Ngăn ngắt dòng */
 }
 /* của email */
+/* ------của email vs đăng ký--------  */
 .menu ul ul a:hover {
-  color: rgb(252, 252, 252);
-  background-color: rgb(145, 137, 171);
+  color: rgb(255, 255, 255);
+  background-color: rgb(56, 141, 194);
   transition: 0.5s;
-  box-shadow: 0 0 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .menu ul li:hover ul {
   display: block;
+  /* Hiện menu con khi hover vào menu cha */
 }
-
+/* ---------------------------------------------------- */
+/* --------------------------------------------------- */
+/*--------------- Hết MENU---------------------------- */
 marquee {
   pointer-events: none; /* Vô hiệu hóa marquee để link có thể bấm */
-  color: red; /* Màu chữ */
+  color: rgb(255, 255, 255); /* Màu chữ */
   font-size: 20px; /* Cỡ chữ */
   font-weight: bold; /* Chữ đậm */
   padding: 5px 0; /* Khoảng cách trên dưới */
+  background-color: rgb(247, 100, 86);
 }
+/* -------------------------------------------- */
+/* ---PHẦN NỘI DUNG------------ */
 
-/* hết menu */
 .content {
   display: flex;
+  /* Bên cạnh nhau */
   width: 100%;
+  /* Chiếm toàn bộ chiều ngang */
   min-height: 800px; /* Đảm bảo không bị lỗi chiều cao */
   margin-bottom: 10px;
+  /* Khoảng cách dưới */
 }
+/* -----------phần nội dung bên phải --------- */
 
 .content article {
   flex: 3; /* 75% chiều rộng */
-  background-color: rgb(114, 174, 226);
+  background-color: rgb(255, 255, 255);
   min-height: 800px;
+  /* Đảm bảo không bị lỗi chiều cao */
 }
 .content article iframe[name="page"] {
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
-
+/* -----------phần lịch làm việc---------  */
 .content aside {
   flex: 1; /* 25% chiều rộng */
-  background-color: rgb(137, 207, 207);
+  background-color: rgb(56, 141, 194);
+  /* màu nền phần lịch làm việc  */
   min-height: 800px;
 }
 .Lichnv .widthr {
@@ -131,83 +149,88 @@ marquee {
   background-image: url("./img/Check.jpg");
   background-size: 20px;
   background-position: 10px center;
+  /* cách mép trái 10px và căn giữa */
   background-repeat: no-repeat;
+  /* không lặp lại ảnh */
   padding: 10px 50px;
+  /* khoảng cách giữa ảnh và chữ */
   font-size: 22px;
   text-decoration: none;
+  /* xóa đường ngang */
+  color: rgb(255, 255, 255);
 }
 .Lichnv ul a:hover {
   text-shadow: 0 0 15px black;
   transition: 0.3s;
-  color: rgb(12, 227, 37);
-  background-color: rgb(87, 160, 132);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   background-image: url("img/next.jpg");
+
   transform: scale(1.1);
 }
 .TB ul {
   list-style: none;
+  /* Bỏ dấu chấm đầu dòng */
 }
 .TB ul a {
   background-image: url("img/ThôngBAOO.jpg");
   display: block;
+  /* cho nó nằm ngang vs mấy thẻ kia  */
   background-size: 30px;
   background-position: 10px center;
+  /* cách mép trái 10px và căn giữa */
   background-repeat: no-repeat;
+  /* không lặp lại ảnh */
   padding: 10px 50px;
   margin-bottom: 10px;
+  /* Khoảng cách giữa các menu */
   font-size: 22px;
   text-decoration: none;
-  background-color: rgb(107, 107, 215);
+  background-color: rgb(112, 173, 237);
+  color: rgb(255, 255, 255);
 }
 .TB ul a:hover {
-  text-shadow: 0 0 20px black;
-  transition: 0.3s;
-  color: rgb(12, 227, 37);
-  background-color: rgb(87, 160, 132);
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   background-image: url("img/next.jpg");
   transform: scale(1.1);
 }
 
 h2 {
   text-align: center;
-  background-color: rgb(141, 141, 177);
+  color: rgb(253, 253, 253);
 }
 .video,
 .diachi,
 .fanpage {
   text-align: center;
-  background-color: aquamarine;
+  background-color: rgb(56, 141, 194);
 }
 
 /*  */
 footer {
-  text-align: left;
   padding: 20px;
-  background-color: #f4f4f4;
-  border-top: 1px solid #ccc;
-  font-size: 16px;
+  /* Khoảng cách trong footer */
+  background-color: rgb(56, 141, 194);
   line-height: 1.8;
   width: 100%;
   display: flex;
   justify-content: center;
+  color: #ffffff;
 }
 
 .footer-container {
   max-width: 800px;
   width: 100%;
-  padding: 0 20px;
-}
-
-footer p {
-  margin: 0;
-  text-align: left;
 }
 
 footer a {
-  color: #0066cc;
+  color: #5100ff;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+  box-shadow: 0 0 10px #000000;
 }
